@@ -7,9 +7,9 @@
  **/
 void swap(int *a, int *b)
 {
-    int tmp = *a;
-    *a = *b;
-    *b = tmp;
+int tmp = *a;
+*a = *b;
+*b = tmp;
 }
 /**
  * partition - itererates the partition and call swap
@@ -21,26 +21,26 @@ void swap(int *a, int *b)
  **/
 int partition(int *array, int low, int high, size_t size)
 {
-    int pivot = array[high], i = low - 1, j;
+int pivot = array[high], i = low - 1, j;
 
-    for (j = low; j < high; j++)
-    {
-        if (array[j] <= pivot)
-        {
-            i++;
-            if (i != j)
-            {
-                swap(&array[i], &array[j]);
-                print_array(array, size);
-            }
-        }
-    }
-    if ((i + 1) != high)
-    {
-        swap(&array[i + 1], &array[high]);
-        print_array(array, size);
-    }
-    return (i + 1);
+for (j = low; j < high; j++)
+{
+if (array[j] <= pivot)
+{
+i++;
+if (i != j)
+{
+swap(&array[i], &array[j]);
+print_array(array, size);
+}
+}
+}
+if ((i + 1) != high)
+{
+swap(&array[i + 1], &array[high]);
+print_array(array, size);
+}
+return (i + 1);
 }
 /**
  * quicks - recursive call to creates partitions
@@ -52,15 +52,15 @@ int partition(int *array, int low, int high, size_t size)
  **/
 void quicks(int array[], int low, int high, size_t size)
 {
-    int lomuto;
+int lomuto;
 
-    if (low < high)
-    {
-        lomuto = partition(array, low, high, size);
+if (low < high)
+{
+lomuto = partition(array, low, high, size);
 
-        quicks(array, low, lomuto - 1, size);
-        quicks(array, lomuto + 1, high, size);
-    }
+quicks(array, low, lomuto - 1, size);
+quicks(array, lomuto + 1, high, size);
+}
 }
 /**
  * quick_sort - calls quicks with all parameters
@@ -71,8 +71,8 @@ void quicks(int array[], int low, int high, size_t size)
 void quick_sort(int *array, size_t size)
 {
 
-    if (array == NULL || size < 2)
-        return;
+if (array == NULL || size < 2)
+return;
 
-    quicks(array, 0, size - 1, size);
+quicks(array, 0, size - 1, size);
 }
