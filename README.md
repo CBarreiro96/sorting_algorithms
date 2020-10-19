@@ -11,7 +11,7 @@ Mergesort is a comparison-based algorithm that focuses on how to merge together 
 [merge](https://media.geeksforgeeks.org/wp-content/cdn-uploads/Merge-Sort-Tutorial.png)
 ##### :boom: Insertion Sort
 Insertion sort is a comparison-based algorithm that builds a final sorted array one element at a time. It iterates through an input array and removes one element per iteration, finds the place the element belongs in the array, and then places it there.
-* [insertion](https://media.geeksforgeeks.org/wp-content/uploads/insertionsort.png)
+[insertion](https://media.geeksforgeeks.org/wp-content/uploads/insertionsort.png)
 
 ##### :boom: Bubble Sort
 Bubble sort is a comparison​-based algorithm that compares each pair of elements in an array and swaps them if they are out of order until the entire array is sorted. For each element in the list, the algorithm compares every pair of elements.
