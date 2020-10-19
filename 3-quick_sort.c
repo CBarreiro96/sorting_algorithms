@@ -17,7 +17,7 @@ int tmp = *a;
  * @low: 1st value of the array
  * @high: last value of the array
  * @size: size of the array
- * @Return: i + 1
+ * Return: i + 1
  **/
 int partition(int *array, int low, int high, size_t size)
 {
@@ -48,7 +48,7 @@ return (i + 1);
  * @low: 1st value of the array
  * @high: last value of the array
  * @size: size of the array
- * @Return: Void
+ * Return: Void
  **/
 void quicks(int array[], int low, int high, size_t size)
 {
@@ -66,7 +66,7 @@ quicks(array, lomuto + 1, high, size);
  * quick_sort - calls quicks with all parameters
  * @array: array of the partition
  * @size: size of the array
- * @Return: Void
+ * Return: Void
  **/
 void quick_sort(int *array, size_t size)
 {
